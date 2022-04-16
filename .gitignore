@@ -28,6 +28,9 @@
 # Rider cache directory
 .idea/
 
+# Config files
+.config/
+
 # Gradle cache directory
 .gradle/
 
