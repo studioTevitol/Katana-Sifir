@@ -1,6 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public interface IHumanoid
 {
     int CurrentHealth { get; }
-    void Move(Vector3 direction);
-    void ApplyDamage(int damage);
+    int MaxHealth { get; }
+    void Move(int x, int y);
+    void Jump();
+    void Attack(IHumanoid target);
+    void GetDamage(int damage);
+    void Die();
 }
